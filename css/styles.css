@@ -43,26 +43,28 @@ img {
 .logo:hover,
 .logo:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-blue {
   color: #2196f3;
 }
 
 /*Menu*/
-.active{
-  color: #2196F3;
+.active {
+  color: #2196f3;
 }
 .active::after {
-  content: "";
+  content: '';
   display: inline-block;
   width: 100%;
-  left:0;
+  left: 0;
   margin-top: 45px;
   position: absolute;
   border-bottom: solid 4px #2196f3;
 }
-.menu-list:hover::after{
-  content: "";
+.menu-list:hover::after {
+  content: '';
   align-items: center;
   display: inline-block;
   border-radius: 4px;
@@ -90,6 +92,8 @@ img {
 .menu-nav a:hover,
 .menu-nav a:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-nav li:not(:last-child) {
   margin-right: 46px;
@@ -109,6 +113,8 @@ img {
 .menu-contact a:hover,
 .menu-contact a:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-header-icon use:hover {
   fill: blue;
@@ -117,6 +123,8 @@ img {
 .menu-contact a:focus {
   fill: #2196f3;
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-contact {
   list-style-type: none;
@@ -168,6 +176,8 @@ img {
 .footer-box a:hover,
 .footer-box a:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address {
   font-size: 14px;
@@ -228,6 +238,8 @@ img {
 .list-svg-join-us a:focus {
   background-color: #2196f3;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*---Agencja---*/
 /* EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU */
@@ -254,6 +266,8 @@ img {
 .first-page .first-button:hover,
 .first-page .first-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-button {
   display: block;
@@ -326,25 +340,25 @@ img {
 .job-box {
   padding-top: 0;
 }
-.list-item{
+.list-item {
   position: relative;
 }
-.list-job-box{
+.list-job-box {
   position: relative;
   justify-content: center;
   text-align: center;
 }
-.list-text-job-box{
+.list-text-job-box {
   position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    width: 100%;
-    height: 70px;
-    padding: 27px;
-    border-bottom-left-radius: 4px;
-    background-color: rgba(47, 48, 58, 0.8);
-    color: #fff;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px;
+  border-bottom-left-radius: 4px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
 }
 /*Nasz zespół*/
 .team-box {
@@ -398,6 +412,8 @@ img {
   background-color: #2196f3;
   fill: #ffffff;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Nasi klienci*/
 .title-our-customers {
@@ -429,6 +445,8 @@ img {
 .border-svg:focus {
   border-color: #2196f3;
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*PORTFOLIO*/
@@ -454,6 +472,8 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button:active {
   color: #ffffff;
@@ -495,6 +515,41 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
+.box {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: -1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card-list:hover .overlay {
+  transform: translateY(0);
+  z-index: 1;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.overlay p {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding-top: 49px;
+  padding-left: 24px;
+  padding-right: 45px;
+  font-weight: 400;
+}
+
 /* Okno modalne*/
 .is-hidden {
   pointer-events: none;
