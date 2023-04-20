@@ -51,6 +51,7 @@ img {
 }
 
 /*Menu*/
+
 .active {
   color: #2196f3;
 }
@@ -349,6 +350,10 @@ img {
   text-align: center;
 }
 .list-text-job-box {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -403,6 +408,7 @@ img {
   height: 44px;
   margin-top: 16px;
   align-items: center;
+  border-radius: 50%;
 }
 .social-card-team:not(last-child) {
   margin-left: 10px;
@@ -564,11 +570,15 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.is-hidden .modal {
+  transform: translateX(-50%) translateY(-50%) scale(0);
+}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.9s linear;
+  transform: translateX(-50%) translateY(-50%) scale(1);
   width: 528px;
   min-height: 581px;
   background-color: #fff;
@@ -590,4 +600,8 @@ img {
   align-items: center;
   justify-content: center;
   fill: #000000;
+}
+.close-btn:hover {
+  background-color: #fd1b1b;
+  fill: #fff;
 }
