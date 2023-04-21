@@ -155,9 +155,7 @@ img {
   display: inline-block;
 }
 .footer-block2 {
-  width: 206px;
-  height: 80px;
-  display: inline-block;
+  padding-top: 12px;
 }
 .footer-block12 {
   display: flex;
@@ -165,7 +163,6 @@ img {
 }
 .footer-box {
   background-color: #2f303a;
-  height: 252px;
   width: 100%;
   padding: 60px 0;
   display: block;
@@ -247,7 +244,8 @@ img {
 .first-page {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(./../images/header/img-header.jpg);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 210px;
   max-width: 1600px;
   display: flex;
   align-items: center;
@@ -270,11 +268,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .first-button {
   display: block;
   cursor: pointer;
   width: 200px;
-  height: 50px;
   background: #2196f3;
   margin: 0 auto;
   text-align: center;
@@ -284,6 +282,8 @@ img {
   line-height: 1.9;
   border: none;
   border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*nasze atuty*/
@@ -309,7 +309,8 @@ img {
 .background-icon-feature {
   background-color: #f5f4fa;
   width: 270px;
-  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: center;
   padding-top: 25px;
@@ -359,7 +360,6 @@ img {
   right: 0;
   margin: 0;
   width: 100%;
-  height: 70px;
   padding: 27px;
   border-bottom-left-radius: 4px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -377,7 +377,7 @@ img {
 }
 .card-team {
   width: 270px;
-  height: 428px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -410,9 +410,6 @@ img {
   align-items: center;
   border-radius: 50%;
 }
-.social-card-team:not(last-child) {
-  margin-left: 10px;
-}
 .social-card-team:hover,
 .social-card-team:focus {
   background-color: #2196f3;
@@ -439,7 +436,8 @@ img {
 }
 .border-svg {
   width: 170px;
-  height: 92px;
+  padding-top: 24.71px;
+  padding-bottom: 20.58px;
   display: flex;
   align-items: center;
   justify-content: center;
