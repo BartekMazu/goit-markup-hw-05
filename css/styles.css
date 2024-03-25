@@ -567,7 +567,9 @@ padding-left: 16px;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hiden;
+    opacity: 0;
 }
 
 .modal {
@@ -614,7 +616,10 @@ padding-left: 16px;
     fill: #ffffff;
 }
 
-
+.x-button:hover .close,
+.x-button:focus .close {
+    fill: #ffffff;
+}
 
 .leave-your-contacts {
     font-weight: 500;
@@ -660,6 +665,10 @@ padding-left: 16px;
 .input-style:hover,
 .input-style:focus {
     border-color: #4d5ae5;
+}
+
+.form-icon:hover{
+    fill: #4d5ae5;
 }
 
 .form-icon {
@@ -716,16 +725,8 @@ padding-left: 16px;
 }
 
 .is-open {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
 }
 
 .check {
